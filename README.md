@@ -1,33 +1,13 @@
 # Citi Bike Analysis with Tableau
-![image](https://user-images.githubusercontent.com/112406455/217119594-e9639cc0-082c-491a-acf7-4b2f3a750550.png)
-## Background 
-Congratulations on your new job! As the new lead analyst for the [New York Citi Bike](https://en.wikipedia.org/wiki/Citi_Bike) program, you are now responsible for overseeing the largest bike-sharing program in the United States. In your new role, you will be expected to generate regular reports for city officials looking to publicize and improve the city program.
+![images](https://user-images.githubusercontent.com/115101031/224523484-c6ea3ce2-7ad7-4e0b-a21b-fafa99a3a802.jpeg)
 
+## Background 
 Since 2013, the Citi Bike program has implemented a robust infrastructure for collecting data on the program's utilization. Each month, bike data is collected, organized, and made public on the [Citi Bike Data](https://citibikenyc.com/system-data) webpage.
 
 However, while the data has been regularly updated, the team has yet to implement a dashboard or sophisticated reporting process. City officials have questions about the program, so your first task on the job is to build a set of data reports to provide the answers.
+
 ## Deployment
 Please find below the link to the Tableau dashboard, showcasing the results of the analysis: https://public.tableau.com/app/profile/jeremy.tallant/viz/citibike_16762569400730/Story1
-## Instructions
-Your task in this assignment is to aggregate the data found in the Citi Bike Trip History Logs and find two unexpected phenomena.
-
-1. Design 2–5 visualizations for each discovered phenomenon (4–10 total). You may work with a timespan of your choosing. Optionally, you can also merge multiple datasets from different periods.
-
-2. Use your visualizations (not necessarily all of them) to design a dashboard for each phenomenon. The dashboards should be accompanied by an analysis explaining why the phenomenon may be occurring.
-
-3. Create one of the following visualizations for city officials:
-
-    * **Basic**: A static map that plots all bike stations with a visual indication of the most popular locations to start and end a journey, with zip code data overlaid on top.
-
-    * **Advanced**: A dynamic map that shows how each station's popularity changes over time (by month and year). Again, with zip code data overlaid on the map.
-
-    * The map you choose should also be accompanied by a write-up describing any trends that were noticed during your analysis.
-
-4. Create your final presentation:
-
-    * Create a Tableau story that brings together the visualizations, requested maps, and dashboards.
-
-    * Ensure your presentation is professional, logical, and visually appealing.
     
 ## Data Source
 1. The initial stage of the project involved acquiring all the monthly CSV files, covering the period from January 2018 to December 2020, from the [Citi Bike Data](https://citibikenyc.com/system-data) webpage and organizing them in a designated folder named "data". The data used in this analysis specifically pertains to the Jersey City region.
@@ -53,8 +33,27 @@ Your task in this assignment is to aggregate the data found in the Citi Bike Tri
    <img width="1212" alt="Screenshot 2023-02-13 at 4 47 14 PM" src="https://user-images.githubusercontent.com/112406455/218595280-98ac8c4d-2ebb-4a97-a187-dd6978def8f7.png">
    
    **Please note that the large size of the CSV files precludes their storage in this repository and in GitHub's Large File Storage. As a result, the CSV files have been added to a .gitignore file.**
+
+## Methodology
+My task, as the data analyst, is to build a set of data reports to address their questions about the program.  In looking for an effective avenue of inquiry, I used 4 data sets: January and February for 2022 and 2023.
+
+Questions I am hoping to answer for city officials:
+1) Is there a discernable pattern of use of the program over a similar time period from 2022 to 2023?
+2) How can certain patterns of use inform city officials on ways to improve the program.
+
 ## Dashboards
-From the Citi Bike data, a homepage and three corresponding dashboards were created to provide a comprehensive analysis and visualization of the data.
+Looking at the most recent data available (January and February 2023), I wondered if meangingful analysis and conclusions could be drawn by  comparing it to the 2022 data sets for the same two months.  For example:
+1) Total ridership (bar chart)
+2) Ridership by weekeday (treemap)
+3) Ridership  by time of day (heat map)
+4) Bike preference by users (pie chart)
+5) Comparison of trip duration between Citi Bike members versus casual users (customised shape chart)
+6) Trips by bike type (bubble chart)
+7) Average trip duration by bike type (bar chart)
+8) Top 10 start and end stations (scaled bar chart)
+9) Geolocation of top 50 start and end stations (map, with toggles for year)
+10) Average trip duration for the top 50 start and end stations (map, with toggles for year)
+
 ### Homepage
 * The homepage serves as an introduction to the project, providing a concise overview of its purpose and contents. It clearly summarizes the key insights and findings of each dashboard, allowing for quick and easy navigation.
 <img width="1425" alt="Screenshot 2023-02-13 at 8 21 56 PM" src="https://user-images.githubusercontent.com/112406455/218622889-c2c2e218-99cc-4f3f-989b-e50da7169004.png">
