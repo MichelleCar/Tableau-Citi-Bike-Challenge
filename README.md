@@ -7,32 +7,7 @@ Since 2013, the Citi Bike program has implemented a robust infrastructure for co
 However, while the data has been regularly updated, the team has yet to implement a dashboard or sophisticated reporting process. City officials have questions about the program, so your first task on the job is to build a set of data reports to provide the answers.
 
 ## Deployment
-Please find below the link to the Tableau dashboard, showcasing the results of the analysis: https://public.tableau.com/app/profile/jeremy.tallant/viz/citibike_16762569400730/Story1
-    
-## Data Source
-1. The initial stage of the project involved acquiring all the monthly CSV files, covering the period from January 2018 to December 2020, from the [Citi Bike Data](https://citibikenyc.com/system-data) webpage and organizing them in a designated folder named "data". The data used in this analysis specifically pertains to the Jersey City region.
-2. Subsequently, I established a Jupyter Notebook file, named "[citibike.ipynb](https://github.com/JeremyTallant/tableau-challenge/blob/main/citibike.ipynb)", to systematically clean and combine all the monthly CSV files into a single CSV file, in preparation for importing into Tableau.
-3. The following is a comprehensive overview of the data cleansing process:
-   * First import pandas.
-   <img width="1084" alt="Screenshot 2023-02-13 at 4 46 14 PM" src="https://user-images.githubusercontent.com/112406455/218593152-ef1d9f47-2703-4376-b778-635b99482c6f.png">
-   
-   * Read in all csv files for a single year in a pandas dataframe, store in a list, and then concatenate into a single dataframe.
-   <img width="1215" alt="Screenshot 2023-02-13 at 4 46 27 PM" src="https://user-images.githubusercontent.com/112406455/218593900-1df2f2c1-927b-4650-abd3-517e8054c5f9.png">
-   
-   * Repeat step for the remaining years.
-   <img width="1215" alt="Screenshot 2023-02-13 at 4 46 35 PM" src="https://user-images.githubusercontent.com/112406455/218594370-6c34b4b1-e184-434d-a8af-b0717afd70ca.png">
-   <img width="1214" alt="Screenshot 2023-02-13 at 4 46 43 PM" src="https://user-images.githubusercontent.com/112406455/218594455-7beeab76-a39d-4349-92a5-043a16a05235.png">
-   
-   * Combine all three dataframes into a single dataframe.
-   <img width="1212" alt="Screenshot 2023-02-13 at 4 46 58 PM" src="https://user-images.githubusercontent.com/112406455/218594806-4331abbd-8cc4-49c1-8bfc-fd6b105899eb.png">
-   
-   * Change the values in the gender column from the numerical value to the actual value.
-   <img width="1214" alt="Screenshot 2023-02-13 at 4 47 07 PM" src="https://user-images.githubusercontent.com/112406455/218595129-b560a3d6-92a1-48fd-b9bd-e8cb1d643ae1.png">
-   
-   * Then save the dataframe to a csv file.
-   <img width="1212" alt="Screenshot 2023-02-13 at 4 47 14 PM" src="https://user-images.githubusercontent.com/112406455/218595280-98ac8c4d-2ebb-4a97-a187-dd6978def8f7.png">
-   
-   **Please note that the large size of the CSV files precludes their storage in this repository and in GitHub's Large File Storage. As a result, the CSV files have been added to a .gitignore file.**
+Please find below the link to the Tableau dashboard, showcasing the results of the analysis: https://public.tableau.com/views/CitibikeChallenge_16785020317790/CitiBikeAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link
 
 ## Methodology
 My task, as the data analyst, is to build a set of data reports to address their questions about the program.  In looking for an effective avenue of inquiry, I used 4 data sets: January and February for 2022 and 2023.
@@ -40,6 +15,19 @@ My task, as the data analyst, is to build a set of data reports to address their
 Questions I am hoping to answer for city officials:
 1) Is there a discernable pattern of use of the program over a similar time period from 2022 to 2023?
 2) How can certain patterns of use inform city officials on ways to improve the program.
+
+## Data Source
+Using data from the Citi Bike site (https://citibikenyc.com/system-data), the focus of my analysis is the comparison of the first two months of 2023 with the first two months of 2022.
+
+The data sets required some cleaning, including merging the data sets into one DataFrame, converting data into proper date/time format, creating a column to hold trip duration for each trip for the purpose of excluding any trip less than 30 minutes.  Finally, I removed any rows with null values in any column, and exported the final filtered and clearned DataFrame to a CSV file.
+
+<img width="690" alt="Screenshot 2023-03-11 at 11 14 53 PM" src="https://user-images.githubusercontent.com/115101031/224524090-b2e2d67e-15da-41ac-a10a-798a80085e29.png">
+<img width="608" alt="Screenshot 2023-03-11 at 11 16 45 PM" src="https://user-images.githubusercontent.com/115101031/224524102-3a4937e6-65e9-4820-a98a-18d76365ac04.png">
+<img width="594" alt="Screenshot 2023-03-11 at 11 16 55 PM" src="https://user-images.githubusercontent.com/115101031/224524109-a786ebf6-2ead-4834-8763-b92d7eaa6285.png">
+<img width="585" alt="Screenshot 2023-03-11 at 11 17 07 PM" src="https://user-images.githubusercontent.com/115101031/224524115-9f674fca-8f21-4340-8a8c-f306758209f6.png">
+<img width="587" alt="Screenshot 2023-03-11 at 11 17 16 PM" src="https://user-images.githubusercontent.com/115101031/224524124-aa863ae8-89b8-403c-aa9e-40a3fb4b0f2f.png">
+<img width="587" alt="Screenshot 2023-03-11 at 11 17 26 PM" src="https://user-images.githubusercontent.com/115101031/224524133-dcacc0d6-dc7e-4230-a51c-21c8b27bd506.png">
+<img width="586" alt="Screenshot 2023-03-11 at 11 17 34 PM" src="https://user-images.githubusercontent.com/115101031/224524145-d1e777e4-5e71-4d8d-809d-4d8224afdd3b.png">
 
 ## Dashboards
 Looking at the most recent data available (January and February 2023), I wondered if meangingful analysis and conclusions could be drawn by  comparing it to the 2022 data sets for the same two months.  For example:
