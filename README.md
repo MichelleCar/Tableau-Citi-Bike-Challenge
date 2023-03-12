@@ -43,68 +43,55 @@ Looking at the most recent data available (January and February 2023), I wondere
 10) Average trip duration for the top 50 start and end stations (map, with toggles for year)
 
 ### Homepage
-* The homepage serves as an introduction to the project, providing a concise overview of its purpose and contents. It clearly summarizes the key insights and findings of each dashboard, allowing for quick and easy navigation.
-<img width="1425" alt="Screenshot 2023-02-13 at 8 21 56 PM" src="https://user-images.githubusercontent.com/112406455/218622889-c2c2e218-99cc-4f3f-989b-e50da7169004.png">
+* The homepage serves as an introduction to the project, providing a concise overview of its purpose and contents. 
+<img width="1022" alt="Screenshot 2023-03-11 at 11 23 10 PM" src="https://user-images.githubusercontent.com/115101031/224524288-b3f378bf-a72a-4292-b7eb-a7a3820c2c0e.png">
 
-### User Analysis 
-* The dashboard presents a comprehensive analysis of the Citi Bike trips, taking into account various factors such as user type, gender, and age. Additionally, it provides an in-depth examination of trip patterns based on the hour of day and day of the week, as well as the total number of trips per month.
-<img width="1426" alt="Screenshot 2023-02-13 at 5 32 45 PM" src="https://user-images.githubusercontent.com/112406455/218599192-abf1dfc0-9a14-4d48-8a7a-683cdbf34528.png">
+### Ride Analysis 
+<img width="1001" alt="Screenshot 2023-03-11 at 11 23 25 PM" src="https://user-images.githubusercontent.com/115101031/224524307-5c4c58f0-f726-4c3a-b2f5-8bc9b657fafc.png">
 
-### Station Analysis
-* The dashboard focuses on the analysis of trips in relation to the bike stations. It compares the trip patterns between weekdays and weekends and provides insights into the average trip duration for each month.
-<img width="1424" alt="Screenshot 2023-02-13 at 8 22 32 PM" src="https://user-images.githubusercontent.com/112406455/218623090-2424212c-a74c-4962-a0a4-8cb6698d0327.png">
+### User Analysis
+<img width="999" alt="Screenshot 2023-03-11 at 11 23 53 PM" src="https://user-images.githubusercontent.com/115101031/224524319-c66f9bb1-e78c-45b7-9c03-043a61b9d9b8.png">
+
+### Trip Analysis
+<img width="1002" alt="Screenshot 2023-03-11 at 11 24 07 PM" src="https://user-images.githubusercontent.com/115101031/224524331-2433f520-8d19-48b7-aaab-f7c56778033c.png">
 
 ### Geographic Analysis
-* The third dashboard features two maps showcasing the geographical locations of the start and end stations. The size and color of the markers are used to represent the total number of trips that originated or terminated at each station, providing a visual representation of the trip patterns and frequency.
-<img width="1425" alt="Screenshot 2023-02-13 at 5 33 31 PM" src="https://user-images.githubusercontent.com/112406455/218600539-d287fd71-6f8b-4e2d-805a-e60477abd38b.png">
+<img width="1004" alt="Screenshot 2023-03-11 at 11 24 27 PM" src="https://user-images.githubusercontent.com/115101031/224524338-25be803d-a9fd-41fc-9148-45bf8646c9c3.png">
+<img width="1000" alt="Screenshot 2023-03-11 at 11 24 45 PM" src="https://user-images.githubusercontent.com/115101031/224524388-23e95637-7d20-49fc-9525-e88c9613c276.png">
 
-**A user-friendly interface has been created utilizing Tableau dashboards, allowing for seamless navigation between pages. Please access the link in the deployment section to explore the interactive dashboard and gain valuable insights.**
 
 ## Summary
-<img width="986" alt="Screenshot 2023-02-13 at 6 17 04 PM" src="https://user-images.githubusercontent.com/112406455/218605560-74bbe56a-b822-4b78-b39e-956f143bfffa.png">
 
-* An evaluation of the data covering the time period from 2018 to 2020 shows a total of 1,095,641 trips made using bicycles in New York City. This represents a decrease of 4.83% over the three-year period. The observed decline in trips can be attributed to the adverse effects of the COVID-19 pandemic, including the associated shutdowns, on the usage of bicycles.
-* A comparison of the data from 2018 to 2020 reveals a decrease of 30.20% in the number of subscribers, while there was a simultaneous increase of 374.90% in the number of customers. This disparity in trends can be attributed to the impact of the COVID-19 pandemic on the usage of bicycles in New York City.
-* Over the specified time period, there appears to be a positive trend in the number of female riders, with an increase of 12.55%, while the number of male riders has decreased by 22.29%. While the reason for this trend is not definitively known, it could potentially be attributed to improved safety and security measures for female riders. Further analysis would be required to establish this hypothesis.
+### Ridership Analysis
+* Ridership was higher in the same time period in 2023 by both those holding memberships and by casual users.
+* January 2023 showed a significant increase in use by members over 2022.
+* Ridership was generally up every weekday in the time period under review for 2023.  In general, Sunday's and Monday's saw a significant increase in rides in 2023, as compared to the same time period in 2022.
+* Rides taken between 11am-6pm representated the highest volume of riders using the program.
 
-<img width="822" alt="Screenshot 2023-02-13 at 6 46 50 PM" src="https://user-images.githubusercontent.com/112406455/218609202-043e2682-5796-42c4-91c1-5bdad3f347ad.png">
+### User Analysis
+* 6th and 7th Avenue and Central Park are among the most popular start and end stations among users.  
+* Locations around Central Park seemed to monopolize the top 10 stations overall.
+* Both Citi Bike members and casual users seemed to prefer classic bikes, but casual users showed a higher frequency of selecting electrical and docked bikes.
+* After creating a new calculated measure to determine trip duration between start and end stations for all recorded rides, as expected, casual users of the program showed the greates variance in recorded trips.
 
-* It is noteworthy that the peak utilization of citibikes in New York City occurs during the weekday, specifically during the hours of 8 a.m. and 5 p.m., as a significant number of commuters utilize bicycles for their daily commute.
+### Trip Analysis
+* Classic bikes are among the most used in the program.
+* Docked bikes experienced a decrease in duration of trips between 2022 and 2023 for the same time period., while electric bokes increased in the same timeframe.
 
-<img width="589" alt="Screenshot 2023-02-13 at 6 56 45 PM" src="https://user-images.githubusercontent.com/112406455/218610532-c600a3e0-0abc-431d-bb29-5a2d90f447e7.png">
+### Geolocation Analysis
+* A close-up geographical view of the top 50 stations, shows a high level concentration around popular sites in New York City, including Central Park and 5th and 6th Avenue, popular for dining, shopping, and cultural attractions.  Additional stations in our top 50 focus around midtown Manhattan and Union Square,  These focal points seem consistent between the same time period in 2022 and 2023.
+* Trip duration between start and end stations also seem consistent with these geographical focal points. 
+* The second set of maps are scaled to trip duration and show a consistent distribution for members,with a few stations on the edge of the city showing the longest trips.  Casual users tend to show the longest trips around high traffic areas of the city, often those frequented by tourists.
 
-* An examination of the data reveals that the pattern of peak bicycle usage in New York City remained consistent during 2018 and 2019, with the busiest periods occurring during the weekdays. However, in 2020, a notable deviation from this trend emerged, with weekends experiencing the highest levels of bicycle usage. This shift can likely be attributed to the widespread adoption of remote work as a result of the COVID-19 pandemic. 
+### Overall conclusions
+* Despite raising prices for use of the program in January 2023 (prices also increased in January 2022), and poor reviews, ridership has increased.  With a mission to increase bikeshare ridership and transportation, several campaigns and initiatives over the 2022/2023 year seem to have paid off.
+* Members show the least amount of variance when using the program.  As regular users, trip duration for members tends to fall close to the mean.  Casual users, on the iother hand, show a greater degree of variance from the mean.  This is likely because casula users may account for visitors to New York City, and therefore, their use will depend on a planned excursion or destination.
+* Between 2022 and 2023, Citi Biek increased the number of electrical bikes in the program.  These seem to be more concentrated in areas of hgh traffic (ie. tourist locations) and thus more likley to be used by casual riders than members.
+* Geographical analysis of the top 50 stations indicates effective placement of bike stations.  The most popular member bike locations and trip duration focuses on neighbourhoods, showing that use provides effective and convenient options for members to go about their daily activities.    For casual users, the most frequented stations congregate around high traffic areas, such as top tourist destinations for the city.  Stations indicating the longest trips tend to also focus around some of the most popular destinations in the city.
 
-<img width="621" alt="Screenshot 2023-02-13 at 7 05 26 PM" src="https://user-images.githubusercontent.com/112406455/218611841-d35104a1-4fe0-4b5b-9669-f3fc596f4eb4.png">
-
-* A review of the data by month reveals that the highest usage of bicycles in New York City occurs during the summer months of July, August, and September, in comparison to the winter months. In April of 2020, a marked decrease in bicycle usage was observed, which can be attributed to the restrictions imposed during the early stages of the COVID-19 pandemic.
-
-<img width="602" alt="Screenshot 2023-02-13 at 7 05 30 PM" src="https://user-images.githubusercontent.com/112406455/218612417-bc985457-005a-453f-a641-3425d3a01e91.png">
-
-* The analysis of the data indicates that the majority of bicycle riders in New York City belong to the age group of 29 to 43, with a prevalence of male riders among this demographic.
-
-<img width="1163" alt="Screenshot 2023-02-13 at 7 19 08 PM" src="https://user-images.githubusercontent.com/112406455/218614331-c7e16678-be24-4ba5-a91e-700b3da6248a.png">
-
-* An examination of the data reveals a disparity in the number of start stations compared to the number of end stations.
-
-<img width="812" alt="Screenshot 2023-02-13 at 7 19 16 PM" src="https://user-images.githubusercontent.com/112406455/218614627-d3fa0863-5a3d-4b8b-ad3b-6ccdf6c28036.png">
-
-* The analysis of the data, as depicted in the chart, indicates that Grove St PATH and Hamilton Park are the most frequently used stations for both starting and ending trips.
-
-<img width="615" alt="Screenshot 2023-02-13 at 7 19 20 PM" src="https://user-images.githubusercontent.com/112406455/218615289-c4ec6639-0ecd-4d15-9ada-11ac052315d8.png">
-
-* An examination of the graph presenting the average trip duration, measured in minutes, per month reveals a noteworthy increase in 2020 compared to the average trip durations in 2018 and 2019. This deviation can be attributed to the closure of businesses and an increased amount of time spent outdoors, particularly during the summer months, as a result of the COVID-19 pandemic. 
-
-<img width="1254" alt="Screenshot 2023-02-13 at 7 46 06 PM" src="https://user-images.githubusercontent.com/112406455/218617657-e904b6a8-31b1-4f15-be80-ba9c807653b9.png">
-
-* An analysis of the start station map highlights the concentration of the most frequently used stations in Jersey City, New Jersey, primarily in the zip codes 07302 and 07310. This suggests that the residents of Jersey City utilize the bicycle-sharing service extensively, potentially due to its cost-effectiveness when compared to other transportation options, such as taxis and ride-sharing services.
-
-<img width="1252" alt="Screenshot 2023-02-13 at 7 46 55 PM" src="https://user-images.githubusercontent.com/112406455/218618488-3f4ff112-edab-4dfa-8e52-92d6ddc2e050.png">
-
-* Similar to the start station map, the end station map also illustrates a notable concentration of the most frequently used stations in Jersey City, New Jersey, indicating that residents are likely utilizing the bicycle-sharing service for their commutes to and from work. 
-
-## Conclusion
-In conclusion, this Tableau analysis provides a comprehensive overview of the trends and patterns in Citibike usage over a specified time period. Through the creation of interactive dashboards and visualizations, key insights have been extracted and presented, highlighting trends in user type, gender, and age, as well as trip patterns based on hours and weekdays. One noteworthy phenomenon observed from the overall analysis is the high usage of the Citibike service by residents of Jersey City, New Jersey, primarily for commuting purposes. This analysis serves as a valuable resource for anyone interested in understanding the usage of Citibike and exploring the data behind this popular bike-sharing service. I hope that this work will inspire further research and investigation into the data, and encourage others to build upon the insights presented here.
+By transforming the data actively collected by Citi Bike officials into a dashboard, I am able to tell a story that demonstrates:
+1) That there are clear patterns defined by the data, in terms of use of the program and the users of the program.
+2) Citi Bike officals can use this data to make decisions about locations/stations that might not be as frequently used, and thus allocate their resources in more effective locations, maximizing convenience for users, and profititability for the program as it grows.  
 
 
 
